@@ -8,7 +8,10 @@ And the Jupyter notebook to create the graph is here:
 
 [fellowship-of-the-ring-adaptation-graphs.ipynb](fellowship-of-the-ring-adaptation-graphs.ipynb)
 
+Interactive version of the graph:
 
-Final version of the graph:
+https://bariumbitmap.github.io/lotr-adaptation-graphs/
+
+Static version of the graph:
 
 ![plot of page number versus time into movie](inkscape/fellowship-of-the-ring-final.png)
