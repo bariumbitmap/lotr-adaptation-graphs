@@ -1,0 +1,4 @@
+- [ ] Figure out how to wrap long lines in hovertext for plotly interactive graph
+  - https://stackoverflow.com/questions/57973985/how-to-break-a-long-line-in-a-hover-text-plotly
+  - https://community.plotly.com/t/display-long-strings-via-hovermode/51766/2
+  - https://github.com/plotly/plotly.js/issues/1964
