@@ -1,9 +1,14 @@
-if test -d .venv/bin
+#! /usr/bin/env false
+# Use a false shebang since it won't work if run as executable.
+VENV_PATH=.venv
+if test -d "${VENV_PATH}"/bin
 then
-    . ./.venv/bin/activate
-elif test -d .venv/Scripts
+    # Linux / macOS
+    . "${VENV_PATH}"/bin/activate
+elif test -d "${VENV_PATH}"/Scripts
 then
-    . ./.venv/Scripts/activate
+    # Windows
+    . "${VENV_PATH}"/Scripts/activate
 else
-    printf "Error: cannot find virtual environment.\n" >&2
+    printf "Error: cannot find virtual environment: '%s'.\n" "${VENV_PATH}" >&2
 fi
