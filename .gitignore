@@ -1,5 +1,6 @@
 *.png
 *.svg
 *.pdf
+.venv/
 readme.html
 fellowship-of-the-ring-interactive.html
