@@ -1,3 +1,7 @@
+.PHONY: jupyter-notebook
+jupyter-notebook: .venv/bin/jupyter-notebook
+	./.venv/bin/jupyter-notebook
+
 readme.html : readme.md
 	cmark "$<" > "$@"
 
@@ -18,7 +22,3 @@ pip-freeze:
 recreate-venv: requirements.txt
 	python3 -m venv .venv
 	./.venv/bin/python -m pip install -r requirements.txt
-
-.PHONY: jupyter-notebook
-jupyter-notebook:
-	./.venv/bin/jupyter-notebook
