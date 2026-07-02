@@ -1,6 +1,10 @@
 readme.html : readme.md
 	cmark "$<" > "$@"
 
+.PHONY: clean
+clean:
+	rm -f -- readme.html
+
 .PHONY: pip-install
 pip-install: requirements.txt
 	./.venv/bin/python -m pip install -r requirements.txt
